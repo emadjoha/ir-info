@@ -113,7 +113,6 @@ class Ranker :
         print('taken Docs : ' , docs)
         print("Words : " , terms)
         # sorting by ( sum TF-IDF )
-        #f kkdkkdfkfkfkfk
         combinedPropDocs['sum_tf_idf'] = self.rankingBySumOfTF_IDF( docs , terms ,  combinedPropDocs['sum_tf_idf'])
         # sorting by ( vector space according to frequency of terms in doc )
         combinedPropDocs['vs_freq'] = self.rankingByVS( docs , terms ,  combinedPropDocs['vs_freq'])
